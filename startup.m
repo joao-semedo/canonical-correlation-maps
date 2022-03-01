@@ -1,0 +1,3 @@
+clear
+
+addpath util
