@@ -153,13 +153,13 @@ for fold = 1:C_NUM_FOLDS
         
         for j = 1:numCases
 			
-			Xtrain_j = X( cvp.training(fold), :, j );
-			Ytrain_j = Y( cvp.training(fold), :, j );
-			
-			[A, B, r] = canoncorr(Xtrain_j,Ytrain_j);
-			
-			estParams_j = ComputeProbCanonCorrParams...
-				(Xtrain_j, Ytrain_j, A, B, r, rank);
+            Xtrain_j = X( cvp.training(fold), :, j );
+            Ytrain_j = Y( cvp.training(fold), :, j );
+            
+            [A, B, r] = canoncorr(Xtrain_j,Ytrain_j);
+            
+            estParams_j = ComputeProbCanonCorrParams...
+                (Xtrain_j, Ytrain_j, A, B, r, rank);
 			
             Xtest = X( cvp.test(fold), :, j );
             Ytest = Y( cvp.test(fold), :, j );
