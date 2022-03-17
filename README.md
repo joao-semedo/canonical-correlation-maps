@@ -1,5 +1,5 @@
 # canonical-correlation-maps
-Code for "Feedforward and feedback interactions between visual cortical areas use different population activity patterns", Semedo et al. (bioRxiv, 2021)
+Code for "Feedforward and feedback interactions between visual cortical areas use different population activity patterns", Semedo et al. (Nature Communications, 2022)
 
 
 This code pack requires the use of MATLAB version 2012b or newer.
